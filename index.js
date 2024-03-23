@@ -164,3 +164,102 @@
 //         console.log(age)
 //       }
 //       intro(user)
+//
+
+// Promise 
+
+ 
+
+//  const p  = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       resolve("jatin promise resolved")  
+//     },4000)
+//  })
+//  console.log(p)
+
+// const resolveBtn = document.querySelector('#resolve-btn');
+// const rejectBtn = document.querySelector('#reject-btn')
+// const p  = new Promise((resolve,reject)=>{
+//     resolveBtn.addEventListener('click' , () => {
+// resolve('Promise resolved')
+//     })
+//     rejectBtn.addEventListener('click',()=>{
+//         reject("promise rejected")
+//     })
+//     })
+//  p.then(()=>{
+//     console.log("hello i am resolved")
+//  }).catch(()=>{
+//     console.log("error promise rejected")
+//  }).finally(()=>{
+// console.log("finally")
+//  })
+
+//  const resolveBtn = document.querySelector('#resolve-btn');
+// const rejectBtn = document.querySelector('#reject-btn')
+// const p  = new Promise((resolve,reject)=>{
+//     resolveBtn.addEventListener('click' , () => {
+// resolve('Promise resolved')
+//     })
+//     rejectBtn.addEventListener('click',()=>{
+//         reject("promise rejected")
+//     })
+//     })
+//   const p2 =p.then((data)=>{
+//     console.log("hello i am resolved")
+//     return 23;
+//  })
+
+
+//fetch function 
+
+// fetch("https://dummyjson.com/product",{
+//    method:'POST' 
+// })
+// .then((res)=>res.json())
+// .then((data)=>console.log(data))
+
+
+// async and await
+
+// async function makeRequest (){
+//      throw new Error('error in the program')
+// }
+// makeRequest()
+
+
+
+
+
+//  async function makeRequest(){
+//      const url = ("https://dummyjson.com/product")
+//   const responsePromise = fetch(url);
+//   responsePromise.then((res)=>res.json()).then((data)=>{
+//     console.log(data)
+     
+//   })
+
+
+//  }
+//  makeRequest()
+
+// async function makeRequest(){
+//     const url = ("https://dummyjson.com/product")
+
+//  const response = await fetch(url)
+//  const data = await response.json()
+// console.log(data)
+
+
+
+// }
+// makeRequest()
+// optional chaining
+
+// const user = {
+//     name:"anurag",
+//     lastName:"singh",
+//     age:25,
+// }
+// //console.log(user.address && user.address.city)
+// console.log(user?.address?.city)
